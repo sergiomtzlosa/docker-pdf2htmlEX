@@ -14,7 +14,7 @@ RUN cd / && curl -L https://phoenixnap.dl.sourceforge.net/project/freetype/freet
     tar xzvf freetype-2.6.3.tar.gz && cd freetype-2.6.3 && ./configure && make && make install
     
 RUN cd / && wget http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.13.92.tar.gz && \
-    tar xzvf fontconfig-2.12.0.tar.gz && cd fontconfig-2.12.0 && ./configure && make && make install
+    tar xzvf fontconfig-2.13.92.tar.gz && cd fontconfig-2.12.0 && ./configure && make && make install
 
 RUN cd / && git clone https://github.com/coolwanglu/fontforge.git fontforge && cd fontforge && git checkout pdf2htmlEX && \
     ./autogen.sh && ./configure --prefix=/usr && make && make install && ldconfig
